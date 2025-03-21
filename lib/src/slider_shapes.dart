@@ -343,10 +343,10 @@ class SfThumbShape {
         center,
         radius,
         Paint()
-          ..color = Colors.white
+          ..color = Colors.red.withOpacity(0.5)
           ..style = PaintingStyle.stroke
           ..isAntiAlias = true
-          ..strokeWidth = 10.0);
+          ..strokeWidth = 6.0);
 
     if (paint == null) {
       paint = Paint();
@@ -1268,11 +1268,11 @@ class SfRectangularTooltipShape extends SfTooltipShape {
     // web html rendering.
     else {
       strokePaint
-        ..color = Color(0xFFE93356)
+        ..color = Color(0xFFDE4247)
         ..strokeWidth = 1
         ..style = PaintingStyle.stroke;
     }
-    paint.color = Color(0xFFE93356);
+    paint.color = Color(0xFFDE4247);
     context.canvas.drawPath(path, strokePaint);
     context.canvas.drawPath(path, paint);
 
